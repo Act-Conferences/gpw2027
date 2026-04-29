@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="[% global.request.language %]">
+  <head>
+    <meta charset="UTF-8">
+    <meta http-equiv="x-ua-compatible" content="ie=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=0, shrink-to-fit=no">
+    <meta http-equiv="content-type" content="text/html; charset=UTF-8">
+    <base href="[% make_uri('') %]" target="_top">
+    <title>[% global.conference.name %]</title>
+    <meta name="description"      content="<t><de>Der Deutsche Perl/Raku-Workshop ist eine jährlich in Deutschland stattfindende Konferenz von und für Entwickler der Programmiersprachen Perl und Raku.</de><en>The German Perl/Raku Workshop is a conference about the programming languages Perl and Raku. It is organized by Perl developers.</en></t>">
+    <meta name="keywords"         content="Perl,Workshop,Raku,<t><de>Konferenz,Deutschland,Entwickler,Programmiersprache</de><en>Conference,Germany,Developer,Programming language</en></t>">
+    <meta name="application-name" content="ACT GPW2026">
+    <meta name="author"           content="Frankfurt Perlmongers">
+    <meta name="generator"        content="act.yapc.eu">
+    <link rel="alternate" type="application/atom+xml" title="[% global.conference.name %]"
+          href="[% global.request.base_url %][% make_uri_info( 'atom', global.request.language ) %].xml">
+
+  	<!-- Latest compiled and minified CSS -->
+  	<link rel="stylesheet" href="css/styles.css" crossorigin="anonymous">
+[% IF !mainpage %]
+    <script type="text/javascript">
+        var subpage = 1;
+    </script>
+[% END %]
+  </head>
+
+    <body id="page-top">
+        <!-- Navigation-->
+        <nav class="navbar navbar-expand-lg navbar-dark fixed-top navbar-shrink" id="mainNav">
+            <div class="container">
+                <a class="navbar-brand js-scroll-trigger" href="#page-top"><img src="assets/img/karawane-logo-transparent-weiss.png" /></a><button class="navbar-toggler navbar-toggler-right" type="button" data-toggle="collapse" data-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">Menu<i class="fas fa-bars ml-1"></i></button>
+                <div class="collapse navbar-collapse" id="navbarResponsive">
+                    <ul class="navbar-nav text-uppercase ml-auto">
+                        <li class="nav-item"><a class="nav-link js-scroll-trigger" href="index.html">Workshop</a></li>
+                        <li class="nav-item"><a class="nav-link js-scroll-trigger" href="index.html#news"><t><de>Neuigkeiten</de><en>News</en></t></a></li>
+                        <!-- <li class="nav-item"><a class="nav-link js-scroll-trigger" href="[% make_uri('schedule') %]"><t><de>Programm</de><en>Schedule</en></t></a></li> -->
+                        <li class="nav-item"><a class="nav-link js-scroll-trigger" href="[% make_uri('wiki') %]"><t><de>Wiki</de><en>Wiki</en></t></a></li>
+                        <li class="nav-item"><a class="nav-link js-scroll-trigger" href="index.html#sponsors"><t><de>Sponsoren</de><en>Sponsors</en></t></a></li>
+                        <li class="nav-item"><a class="nav-link js-scroll-trigger" href="preise.html"><t><de>Preise</de><en>Entrance Fees</en></t></a></li>
+[% IF global.request.user %]
+                        <li class="nav-item"><a class="nav-link" href="[% make_uri('main') %]"><t><de>Profil</de><en>Profile</en></t></a></li>
+                        <li class="nav-item"><a class="nav-link" href="[% make_uri('logout') %]">Logout</a></li>
+[% ELSE %]
+                        <li class="nav-item"><a class="nav-link" href="[% make_uri('main') %]">Login</a></li>
+[% END %]
+                    </ul>
+                </div>
+            </div>
+        </nav>
+
+[% IF !mainpage %]
+        <section class="page-section" id="workshop">
+            <div class="container">
+                <div class="text-center">
+                    <h2 class="section-heading text-uppercase"><t><de>[% h2_de %]</de><en>[% h2_en %]</en></t></h2>
+                </div>
+                <div class="row">
+                    <div class="col-md-9">
+[% END %]
+
+        [% content %]
+
+[% IF !mainpage %]
+                    </div>
+                    <div class="col-md-3">
+                        <ul>
+                            [% PROCESS menu %]
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </section>
+[% END %]
+
+        <!-- Footer-->
+        <footer class="footer py-4">
+            <div class="container">
+                <div class="row align-items-center">
+                    <div class="col-lg-4 text-lg-left">Copyright © perl-raku-workshop.de 2021 - 2026</div>
+                    <div class="col-lg-4 text-lg-right"><a class="mr-3" href="impressum.html"><t><de>Impressum und Datenschutzerklärung</de><en>Imprint and Data Protection</en></t></a></div>
+                </div>
+            </div>
+        </footer>
+        <!-- Bootstrap core JS-->
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+        <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.bundle.min.js"></script>
+        <!-- Third party plugin JS-->
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-easing/1.4.1/jquery.easing.min.js"></script>
+        <!-- Contact form JS-->
+        <script src="assets/mail/jqBootstrapValidation.js"></script>
+        <script src="assets/mail/contact_me.js"></script>
+        <!-- Core theme JS-->
+        <script src="js/scripts.js"></script>
+        <script type="text/javascript" src="/js/act.js" defer></script>
+    </body>
+</html>
+
