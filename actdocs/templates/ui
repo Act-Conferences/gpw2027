@@ -9,7 +9,7 @@
     <title>[% global.conference.name %]</title>
     <meta name="description"      content="<t><de>Der Deutsche Perl/Raku-Workshop ist eine jährlich in Deutschland stattfindende Konferenz von und für Entwickler der Programmiersprachen Perl und Raku.</de><en>The German Perl/Raku Workshop is a conference about the programming languages Perl and Raku. It is organized by Perl developers.</en></t>">
     <meta name="keywords"         content="Perl,Workshop,Raku,<t><de>Konferenz,Deutschland,Entwickler,Programmiersprache</de><en>Conference,Germany,Developer,Programming language</en></t>">
-    <meta name="application-name" content="ACT GPW2026">
+    <meta name="application-name" content="ACT GPW2027">
     <meta name="author"           content="Frankfurt Perlmongers">
     <meta name="generator"        content="act.yapc.eu">
     <link rel="alternate" type="application/atom+xml" title="[% global.conference.name %]"
@@ -76,7 +76,7 @@
         <footer class="footer py-4">
             <div class="container">
                 <div class="row align-items-center">
-                    <div class="col-lg-4 text-lg-left">Copyright © perl-raku-workshop.de 2021 - 2026</div>
+                    <div class="col-lg-4 text-lg-left">Copyright © perl-raku-workshop.de 2021 - 2027</div>
                     <div class="col-lg-4 text-lg-right"><a class="mr-3" href="impressum.html"><t><de>Impressum und Datenschutzerklärung</de><en>Imprint and Data Protection</en></t></a></div>
                 </div>
             </div>
