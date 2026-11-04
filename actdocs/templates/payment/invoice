@@ -48,7 +48,7 @@ Homepage: http://frankfurt.pm<br>
             <tr>
               <td align="center">[% invoice.invoice_no %]</td>
               <td align="center">[% date_format(invoice.datetime, 'date_short') %]</td>
-              <td align="center">xx.yy.2027</td>
+              <td align="center">14.04.2027</td>
             </tr>
 	  </table>
         </td>
@@ -77,7 +77,7 @@ Homepage: http://frankfurt.pm<br>
               </td>
             </tr>
               <tr>
-              <td align="left">Deutscher Perl/Raku-Workshop xx.yy.-xx.yy.2027 [% item.name %]</td>
+              <td align="left">Deutscher Perl/Raku-Workshop 14.04.-16.04.2027 [% item.name %]</td>
               </tr>
             [% FOREACH item IN order.items %]
             <tr>
