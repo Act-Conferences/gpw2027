@@ -1,22 +1,22 @@
 [% WRAPPER ui title = global.conference.name %]
 
 <article itemscope itemtype="http://data-vocabulary.org/Event">
-  
+
 <meta itemprop="url" content="https://act.yapc.eu/[% global.config.uri %]/event/[% event_id %]">
 [% IF datetime %]
 <meta itemprop="startDate" content="[% date_format(datetime, '%Y-%m-%d') %]T[% date_format(datetime, 'time' ) %]:00+0100">
 <meta itemprop="duration" content="P[% duration %]M">
 [% END %]
 <span itemprop="geo" itemscope itemtype="http://data-vocabulary.org/Geo">
-  <meta itemprop="latitude" content="50.983874">
-  <meta itemprop="longitude" content="7.119581">
+  <meta itemprop="latitude" content="52.3880970">
+  <meta itemprop="longitude" content="9.7180390">
 </span>
 <span itemprop="location" itemscope itemtype="http://data-vocabulary.org/Organization">
-  <meta itemprop="name" content="FHDW Bergisch-Gladbach">
+  <meta itemprop="name" content="STADTTEILZENTRUM NORDSTADT BÜRGERSCHULE">
   <span itemprop="address" itemscope itemtype="http://data-vocabulary.org/Address">
-    <meta itemprop="street-address" content="Hauptstraße 2">
-    <meta itemprop="locality" content="Bergisch-Gladbach">
-    <meta itemprop="postal-code" content="51465">
+    <meta itemprop="street-address" content="Klaus-Müller-Kilian-Weg 2">
+    <meta itemprop="locality" content="Hanover">
+    <meta itemprop="postal-code" content="30167">
     <meta itemprop="region" content="Nordrhein-Westfalen">
     <meta itemprop="country-name" content="Deutschland">
   </span>
